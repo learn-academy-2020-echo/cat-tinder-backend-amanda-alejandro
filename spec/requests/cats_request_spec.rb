@@ -91,4 +91,29 @@ RSpec.describe "Cats", type: :request do
    # Errors are returned as an array because there could be more than one, if there are more than one validation failures on an attribute.
    expect(json['age']).to include "can't be blank"
  end
+
+#  it "doesn't update a cat without valid name" do
+#    cat_params = {
+#      cat: {
+#         age: 5,
+#         enjoys: 'Sleeping', 
+#         image: 'https://cdn.pixabay.com/photo/2015/06/07/19/42/cat-800760_960_720.jpg'
+#      }
+#    }
+   
+#    # Send the request to the  server
+#    patch '/cats/1', params: cat_params
+   
+#    # expect an error if the cat_params does not have a name
+#    # expect(response.status).to eq 422
+#    expect(response).to have_http_status(422)
+   
+#    # Convert the JSON response into a Ruby Hash
+#    json = JSON.parse(response.body)
+   
+#    # Errors are returned as an array because there could be more than one, if there are more than one validation failures on an attribute.
+#    expect(json['name']).to include "can't be blank"
+#  end
+
+
 end
