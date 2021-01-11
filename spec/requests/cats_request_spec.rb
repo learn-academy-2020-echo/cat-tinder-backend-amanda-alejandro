@@ -28,7 +28,7 @@ RSpec.describe "Cats", type: :request do
       cat: {
         name: 'Buster',
         age: 4,
-        enjoys: 'Sleeping', 
+        enjoys: 'Sleeping in the sun', 
         image: 'https://cdn.pixabay.com/photo/2015/06/07/19/42/cat-800760_960_720.jpg'
       }
     }

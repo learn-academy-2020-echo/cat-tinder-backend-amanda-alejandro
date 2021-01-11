@@ -16,4 +16,8 @@ RSpec.describe Cat, type: :model do
     expect(cat.errors[:image]).to_not be_empty
   end
 
+  it 'enjoys should be at least 10 characters long' do
+    cat = Cat.create(name: 'Peaches', age: 4, enjoys: 'sleeping', image: 'url address')
+    expect(cat.errors[:enjoys]).to_not be_empty
+  end
 end
